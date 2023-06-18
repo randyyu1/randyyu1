@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Your_Record_Type</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>MyProjectCompactLayout</compactLayoutAssignment>
+    <label>Your Record Type</label>
+    <picklistValues>
+        <picklist>Master_Picklist__c</picklist>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>My_MultiSelect_Picklist__c</picklist>
+        <values>
+            <fullName>Item 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>My_Picklist_Based_On_RecordType__c</picklist>
+        <values>
+            <fullName>Your Item 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Your Item2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>My_Picklist__c</picklist>
+        <values>
+            <fullName>My Picklist Item 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My Picklist Item 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My Picklist Item 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Slave_Picklist__c</picklist>
+        <values>
+            <fullName>Atlanta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montreal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toronto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Your Status 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Your Status 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Your Status 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

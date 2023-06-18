@@ -1,0 +1,18 @@
+<template>
+    <div class="camera">
+      <video canplay={handlePlay} id="video">Video stream not available.</video>
+      <button id="startbutton">Take photo</button>
+    </div>
+    <canvas id="canvas">
+    </canvas>
+    <div class="output">
+      <img id="photo" alt="The screen capture will appear in this box.">
+    </div>
+    <lightning-file-upload
+      label="Attach receipt"
+      name="fileUploader"
+      accept={acceptedFormats}            
+      record-id={myRecordId}
+      onuploadfinished={handleUploadFinished}
+      multiple>></lightning-file-upload>
+</template>

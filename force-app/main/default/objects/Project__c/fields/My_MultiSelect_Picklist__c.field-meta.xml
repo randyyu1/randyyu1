@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_MultiSelect_Picklist__c</fullName>
+    <externalId>false</externalId>
+    <label>My_MultiSelect_Picklist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Item 1</fullName>
+                <default>false</default>
+                <label>Item 1</label>
+            </value>
+            <value>
+                <fullName>Item 2</fullName>
+                <default>false</default>
+                <label>Item 2</label>
+            </value>
+            <value>
+                <fullName>Item 3</fullName>
+                <default>false</default>
+                <label>Item 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

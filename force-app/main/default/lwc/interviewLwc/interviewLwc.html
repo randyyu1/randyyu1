@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Accounts">
+        <template if:true={accts.data}>
+            <template for:each={accts.data} for:item="oneAcct">
+                <div key={oneAcct.Id} class="slds-m-left_small">
+                    <p>{oneAcct.Name}</p>
+                    <p>{oneAcct.Phone}</p>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+    <lightning-card>
+        <template if:true={dataAccts}>
+            <template for:each={dataAccts} for:item="oneAcc">
+                <div key={oneAcc.Id} class="slds-m-left_small">
+                    <p>{oneAcc.Name}</p>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+    <lightning-button label="Call Imperatively" onclick={handleImperative}>
+    </lightning-button>
+    <lightning-card>
+        <template if:true={dataAccts}>
+            <template for:each={dataAccts} for:item="acct">
+                <div key={acct.Id} class="slds-m-left_small">
+                    <p>{acct.Name}</p>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+    <lightning-button label="CreateRecord" onclick={handleCreateRecord}>
+    </lightning-button>
+    <lightning-card title="Account">
+        <template if:true={acctName}>
+            <p>Name: <lightning-formatted-text value={acctName}></lightning-formatted-text></p>
+        </template>
+    </lightning-card>
+</template>

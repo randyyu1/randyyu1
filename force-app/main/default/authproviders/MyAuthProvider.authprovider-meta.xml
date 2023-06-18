@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <consumerKey>3MVG9vtcvGoeH2bhXLPZbKkhtzgS7NHQsqH6n_rZ6ub7e9DoJqx.KE8cOoGJ2HMRL.AwgbhEGTMpWK39pIqsw</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>MyAuthProvider</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <providerType>Salesforce</providerType>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+</AuthProvider>

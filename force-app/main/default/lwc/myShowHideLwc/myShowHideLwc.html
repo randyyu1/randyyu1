@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <h2 class="slds-card__header-title" onclick={handleShowHide}>
+            <a>Show or Hide a section</a>
+        </h2>
+        <div class="slds-hide nonExist">
+            This is the section to be shown or hidden.
+        </div>
+
+        <h2 class="slds-card__header-title" onclick={handleShowHide2}>
+            <a>Show or Hide a section 2</a>
+        </h2>
+        <div class={varClass}>
+            This is the section to be shown or hidden.
+        </div>
+    </lightning-card>
+</template>

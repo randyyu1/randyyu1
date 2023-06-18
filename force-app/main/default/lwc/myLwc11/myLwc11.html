@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="lightning-record-edit/view-form Edit Account myLwc11">
+        <lightning-record-edit-form object-api-name="Account" record-id={recordId} onsuccess={successHandler}>
+            <lightning-messages></lightning-messages>
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Phone"></lightning-input-field>
+            <lightning-input-field field-name="Industry"></lightning-input-field>
+  
+            <lightning-button type="submit" variant="brand" name="save" label="Edit">
+            </lightning-button>
+        </lightning-record-edit-form>
+
+        <lightning-record-view-form object-api-name="Account" record-id={recordId}>
+            <lightning-output-field field-name="Name"></lightning-output-field>
+            <lightning-output-field field-name="Phone"></lightning-output-field>
+            <lightning-output-field field-name="Industry"></lightning-output-field>
+        </lightning-record-view-form>
+    </lightning-card>
+
+</template>

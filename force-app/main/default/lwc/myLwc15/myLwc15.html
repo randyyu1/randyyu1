@@ -1,0 +1,8 @@
+<template>
+<lightning-card title="@wire getPicklistValues" icon-name="custom:custom8">
+<div if:true={picklistValues} class="slds-m-around_medium">
+    <lightning-combobox label="Industry:" value={selectedValue} options={picklistValues.values} onchange={handleChange}></lightning-combobox>
+    <p>Selected value: <lightning-formatted-text value={selectedValue}></lightning-formatted-text></p>
+</div>
+</lightning-card>
+</template>

@@ -1,0 +1,7 @@
+<aura:component controller="MyServerSideController">
+    <aura:attribute name="opportunities" type="Opportunity[]" />
+    <ui:button label="Call Server Method" press="{!c.myClientMethod}" />
+    <aura:iteration var="opportunity" items="{!v.opportunities}">
+        <p>{!opportunity.Name}</p>
+    </aura:iteration>
+</aura:component>

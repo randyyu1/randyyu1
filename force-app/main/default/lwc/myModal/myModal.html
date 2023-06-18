@@ -1,0 +1,18 @@
+<template>
+    <header class="slds-modal__header">
+        <h2 class="slds-modal__title slds-hyphenate">
+            {stage} Opportunities
+        </h2>
+    </header>
+    <div class="slds-modal__content slds-p-around_medium">
+        <lightning-datatable 
+            key-field="id"
+            hide-checkbox-column
+            data={records}
+            columns={columns}>
+        </lightning-datatable>
+    </div>
+    <footer class="slds-modal__footer">
+        <button class="slds-button slds-button_neutral" onclick={close}>Close</button>
+    </footer>
+</template>

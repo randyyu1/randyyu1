@@ -1,0 +1,49 @@
+.fullWidth{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.searchInput{
+    font: 1rem;
+    font-weight:400;
+    background-color: white;
+}
+
+.ejtop{
+    padding-top: 0px;
+}
+
+.searchResults{
+    width: 75%;
+    max-width: 75%;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+}
+
+.slds-page-header{
+    padding: 16px !important;
+}
+
+
+
+.st{
+    opacity: 0;
+
+}
+
+li {
+    height:30px;
+}
+
+ul li a {
+    color:black;
+}
+
+.noTopBorder {
+    border-top-style: none;
+}
+
+.noTopMargin{
+    margin-top: 0px;
+}

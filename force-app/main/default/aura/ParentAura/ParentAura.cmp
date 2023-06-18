@@ -1,0 +1,3 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <c:myModal recordId="{!v.recordId}" onclose="{!c.closeModal}"></c:myModal>
+</aura:component>

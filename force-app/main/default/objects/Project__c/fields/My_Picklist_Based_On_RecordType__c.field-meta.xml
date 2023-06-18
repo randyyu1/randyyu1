@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Picklist_Based_On_RecordType__c</fullName>
+    <externalId>false</externalId>
+    <label>My Picklist Based On RecordType</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>My Item 1</fullName>
+                <default>false</default>
+                <label>My Item 1</label>
+            </value>
+            <value>
+                <fullName>My Item 2</fullName>
+                <default>false</default>
+                <label>My Item 2</label>
+            </value>
+            <value>
+                <fullName>Your Item 1</fullName>
+                <default>false</default>
+                <label>Your Item 1</label>
+            </value>
+            <value>
+                <fullName>Your Item2</fullName>
+                <default>false</default>
+                <label>Your Item2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

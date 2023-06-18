@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="lightning-datatable Accounts myDataTable" icon-name="standard:account">
+    <template if:true={accounts}>
+        <lightning-datatable
+            key-field="Id"
+            data={accounts}
+            columns={columns}
+            draft-values={draftRecords}
+            onsave={handleSave}>
+        </lightning-datatable>
+    </template>
+    <template if:true={wireResult.error}>{error}</template>
+    </lightning-card>
+</template>

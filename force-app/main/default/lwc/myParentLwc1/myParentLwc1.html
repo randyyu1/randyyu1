@@ -1,0 +1,10 @@
+<template>
+<lightning-card title="Parent Component" icon-name="custom:custom7">
+<div class="slds-m-around_medium">
+    <p><lightning-button label="Call Child component @api method" variant="brand" onclick={handleClick}></lightning-button></p>
+    <p>Handle child event: <lightning-formatted-text value={eventDataFromChild}></lightning-formatted-text></p>
+    <br>
+    <c-my-child-lwc1 api-var="Hello from parent" onmyevent={handleChildEvent}></c-my-child-lwc1>
+</div>
+</lightning-card>
+</template>

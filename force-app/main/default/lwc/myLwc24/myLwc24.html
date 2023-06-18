@@ -1,0 +1,41 @@
+<template>
+    <lightning-card title="buttons in lieu of radio buttons" icon-name="custom:custom8">
+    
+    <lightning-layout multiple-rows class="slds-m-left_medium slds-m-around_medium">
+        <lightning-layout-item size="12" class="slds-m-bottom_xx-small">
+            <label for="dummy">This phone number is:</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" class="slds-m-bottom_medium">
+            <lightning-button class="MobileMarker" name="Mobile" label="Mobile" variant="brand-outline" onclick={handleButton}>
+            </lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            <lightning-button class="LandlineMarker" name="Landline" label="Landline" variant="brand-outline" onclick={handleButton}>
+            </lightning-button>
+        </lightning-layout-item>
+    
+        <lightning-layout-item size="12" class="slds-m-bottom_xx-small">
+            <label for="dummy">Send notification to:</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" class="slds-m-bottom_medium">
+            <lightning-button class="EmailMarker" name="Email" label="Email" variant={emailVariant} onclick={handleButton}>
+            </lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            <lightning-button class="TextMarker" name="Text" label="Text" variant={textVariant} onclick={handleButton}>
+            </lightning-button>
+        </lightning-layout-item>
+    
+        <lightning-layout-item size="12" class="slds-m-bottom_xx-small">
+            <label for="dummy">Number of children:</label>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-m-bottom_medium">
+            <lightning-button class="MinusMarker slds-m-right_x-small" name="Minus" label="-" variant="brand-outline" onclick={handleButton}>
+            </lightning-button>
+            <lightning-button variant="base" label={numOfChildren} class="slds-m-right_x-small"></lightning-button>
+            <lightning-button class="PlusMarker" name="Plus" label="+" variant="brand-outline" onclick={handleButton}>
+            </lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+    </lightning-card>
+    </template>

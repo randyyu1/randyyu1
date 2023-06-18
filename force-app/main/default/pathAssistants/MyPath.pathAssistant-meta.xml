@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>MyPath</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Account__c</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>My_Date__c</fieldNames>
+        <fieldNames>My_Formula_Field__c</fieldNames>
+        <picklistValueName>My Status 1</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Account__c</fieldNames>
+        <fieldNames>My_Currency__c</fieldNames>
+        <fieldNames>My_Date__c</fieldNames>
+        <picklistValueName>My Status 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Account__c</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Master_Picklist__c</fieldNames>
+        <fieldNames>Slave_Picklist__c</fieldNames>
+        <picklistValueName>My Status 3</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>My_Record_Type</recordTypeName>
+</PathAssistant>

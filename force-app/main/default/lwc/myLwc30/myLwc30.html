@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="lightning-input custom validation myLwc30" icon-name="standard:account">
+    <div class="slds-m-around_medium">
+        <lightning-input class="nonExisting" type="text" label="Last name:" value={lastname}
+            required message-when-value-missing="Last name is required!"
+            onchange={handleLastnameChange}>
+        </lightning-input>
+        <lightning-input class="nonExisting fname" type="text" label="First name:" value={firstname}
+            onchange={handleFirstnameChange}>
+        </lightning-input>
+        <lightning-input class="nonExisting age" type="number" label="Age" value={age}
+            min="0" max="100" message-when-range-overflow="Age is over 100" message-when-range-underflow="Age is negative"
+            onchange={handleAgeChange}>
+        </lightning-input>
+        <lightning-button label="Save" onclick={handleSave}></lightning-button>
+    </div>
+    </lightning-card>
+</template>

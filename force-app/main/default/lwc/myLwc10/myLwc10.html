@@ -1,0 +1,10 @@
+<template>
+<lightning-card title="View Accounts" icon-name="custom:custom7">
+<template if:true={accts} for:each={accts} for:item="oneAcct">
+    <div key={oneAcct.Id} class="slds-box slds-box_x-small slds-m-around_medium slds-theme--shade slds-theme--alert-texture">
+        <p>Name: <lightning-formatted-text value={oneAcct.Name}></lightning-formatted-text></p>
+        <p>Phone: <lightning-formatted-phone value={oneAcct.Phone}></lightning-formatted-phone></p>
+    </div>
+</template>
+</lightning-card>
+</template>

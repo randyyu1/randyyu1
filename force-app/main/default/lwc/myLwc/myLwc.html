@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="My Card Title" icon-name="custom:custom14">
+    <div class="slds-m-around_medium">
+        <lightning-input type="text" label="Enter text:" value={myText} onchange={handleTextChange}></lightning-input>
+        <lightning-input type="date" label="Pick a date:" value={myDate} onchange={handleDateChange}></lightning-input>
+        <lightning-input type="color" label="Pick a color:" value={myColor} onchange={handleColorChange}></lightning-input>
+        <lightning-input type="file" label="Pick a file:" value={myFile} onchange={handleFileChange}></lightning-input>
+        <lightning-input type="password" label="Password:" value={myPassword} required onchange={handlePasswordChange}></lightning-input>
+        <lightning-input type="tel" label="Phone:" value={myPhone} onchange={handlePhoneChange}></lightning-input>
+        <lightning-input type="url" label="url:" value={myUrl} onchange={handleUrlChange}></lightning-input>
+        <lightning-input type="number" label="Enter a number:" value={myNumber} onchange={handleNumberChange} 
+            formatter="currency" step="0.01">
+        </lightning-input>
+        <lightning-input type="checkbox" label="My checkbox" checked={myCheckbox} onchange={handleCheckboxChange}>
+        </lightning-input>
+        <lightning-input type="checkbox-button" label="Add cheese" value="cheese" checked={bAddCheese} onchange={handleChkButChange}>
+        </lightning-input>
+        <lightning-input type="toggle" label="My Toggle" checked={myToggle} onchange={handleToggleChange}>
+        </lightning-input>
+        <div>{mydisplay}</div>
+    </div>
+    </lightning-card>
+</template>

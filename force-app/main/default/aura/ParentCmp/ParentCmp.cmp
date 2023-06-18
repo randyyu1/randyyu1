@@ -1,0 +1,5 @@
+<aura:component >
+	<h1>Inside ParentCmp component</h1>
+    <c:ChildCmp1 myattr="hello" />
+    <c:ChildCmp2 />
+</aura:component>

@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="myRelatedRecord (Contact)" icon-name="standard:contact">
+        <lightning-button-menu slot="actions" icon-size="x-small" menu-alignment="auto" alternative-text="Show menu">
+            <lightning-menu-item value="view" label="View" onclick={onButtMenu}></lightning-menu-item>
+            <lightning-menu-item value="remove" label="Remove" onclick={onButtMenu}></lightning-menu-item>
+        </lightning-button-menu>
+
+        <template if:true={caseHasContact}>
+            <lightning-layout multiple-rows="true">
+                <lightning-layout-item size="12" padding="horizontal-medium">
+                    <lightning-record-form record-id={contactId} object-api-name="Contact" fields={contactFields} columns="2">
+                    </lightning-record-form>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+
+        <template if:false={caseHasContact}>
+            <p class="slds-p-horizontal_small slds-p-bottom_small slds-align_absolute-center">Link a related record.</p>
+            <lightning-layout multiple-rows="true">
+                <lightning-layout-item size="12" padding="horizontal-medium">
+                    <lightning-record-edit-form record-id={recordId} object-api-name="Case">
+                        <lightning-input-field variant="label-hidden" field-name="ContactId" onchange={onContactChange}>
+                        </lightning-input-field>
+                    </lightning-record-edit-form>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+    </lightning-card>
+</template>

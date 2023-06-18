@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="lightning-formatted-text View Account" icon-name="custom:custom7">
+        <div if:true={acct.data} class="slds-m-around_medium">
+            <p><lightning-formatted-text value={acct.data.fields.Name.value}></lightning-formatted-text></p>
+            <p><lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+            <p><lightning-formatted-url value={website}></lightning-formatted-url></p>
+        </div>
+        <div if:true={acct.error} class="slds-box slds-box_x-small slds-m-around_medium slds-theme_error">
+            error: {acct.error.body.message}
+        </div>
+    </lightning-card>
+</template>

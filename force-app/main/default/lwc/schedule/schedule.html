@@ -1,0 +1,54 @@
+<template>
+    <lightning-card title="Schedule a 30-minute Appointment with a Physician" icon-name="standard:account">
+    <div class="slds-m-around_large">
+        <lightning-layout horizontal-align="space" multiple-rows="true">
+            <lightning-layout-item size="4" large-device-size="4" medium-device-size="4" small-device-size="12">
+                <div class="slds-m-right_large">
+                    <!--Select Patient combobox-->
+                    <template if:true={lstPatient}>
+                    <lightning-combobox label="Patient:" value={selectedPatientId} options={lstPatient} class="patientCmp"
+                        onchange={handlePatientChange} required>
+                    </lightning-combobox>
+                    </template>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="4" large-device-size="4" medium-device-size="4" small-device-size="12">
+                <div class="slds-m-right_large">
+                    <!--Select Subspecialty combobox-->
+                    <lightning-combobox label="Subspecialty:" value={selectedSubspecialtyId} options={lstSubspecialty} 
+                        onchange={handleSubspecialtyChange} required="true">
+                    </lightning-combobox>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="4" large-device-size="4" medium-device-size="4" small-device-size="12">
+                <div class="slds-m-right_large">
+                    <!--Select Date input-->
+                    <lightning-input type="date" label="Appointment Date:" value={selectedDate} date-style="long" min={minDate} 
+                        onchange={handleDateChange} required>
+                    </lightning-input>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <!--Button Groups for Physicians-->
+        <template if:true={lstPhysicianAppts}>
+            <h1 class="slds-m-top_large slds-m-bottom_medium"><b>Here is the availability of the physicians in this subspecialty. Select a time slot.</b> (Disabled time slots are already taken.)</h1>
+            <template for:each={lstPhysicianAppts} for:item="onePhysician">
+                <div key={onePhysician.PhysicianId} class="slds-m-top_medium" data-item={onePhysician.PhysicianId}>
+                    <b><h1 class="slds-m-bottom_medium">{onePhysician.Name}:</h1></b>
+                    <lightning-button-group>
+                    <template for:each={onePhysician.TimeSlots} for:item="oneTimeSlot">
+                        <lightning-button key={oneTimeSlot.startTime} label={oneTimeSlot.startTime} data-item={onePhysician.PhysicianId}
+                            onclick={handleButtonClick} disabled={oneTimeSlot.disabled}>
+                        </lightning-button>
+                    </template>
+                    </lightning-button-group>
+                </div>
+            </template>
+        </template>
+    </div>
+    </lightning-card>
+
+</template>

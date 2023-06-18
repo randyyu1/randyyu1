@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkBranding xmlns="http://soap.sforce.com/2006/04/metadata">
+    <loginBackgroundImageUrl>https://www.smartertravel.com/uploads/2019/04/people-running-into-water-on-the-beach-hero-1400x500.jpg</loginBackgroundImageUrl>
+    <loginFooterText>My Footer Text</loginFooterText>
+    <loginPrimaryColor>#73BA00</loginPrimaryColor>
+    <network>My Help Center</network>
+    <primaryColor>#1797C0</primaryColor>
+    <primaryComplementColor>#FFFFFF</primaryComplementColor>
+    <quaternaryColor>#B1BAC1</quaternaryColor>
+    <quaternaryComplementColor>#222222</quaternaryComplementColor>
+    <secondaryColor>#51606E</secondaryColor>
+    <tertiaryColor>#DDE4E9</tertiaryColor>
+    <tertiaryComplementColor>#222222</tertiaryComplementColor>
+    <zeronaryColor>#51606E</zeronaryColor>
+    <zeronaryComplementColor>#FFFFFF</zeronaryComplementColor>
+</NetworkBranding>

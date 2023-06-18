@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://randyyu-dev-ed.my.salesforce.com</issuer>
+    <loginUrl>https://randyyu-dev-ed.my.salesforce.com/idp/login?app=0sp1U000000GnZp</loginUrl>
+    <name>My Identity Provider</name>
+    <oauthTokenEndpoint>https://randyyu-dev-ed.my.salesforce.com/services/oauth2/token?so=00D1U000000y6bO</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P11U000007gxLM</requestSigningCertId>
+    <salesforceLoginUrl>https://randyyu-dev-ed.my.salesforce.com?so=00D1U000000y6bO</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>false</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIErDCCA5SgAwIBAgIOAW6eWqjDAAAAAC0zWuEwDQYJKoZIhvcNAQELBQAwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzI0Tm92MjAxOV8xNjU5MzExGDAWBgNVBAsMDzAwRDFVMDAwMDAweTZiTzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0EwHhcNMTkxMTI0MTY1OTMxWhcNMjAxMTI0MTIwMDAwWjCBkDEoMCYGA1UEAwwfU2VsZlNpZ25lZENlcnRfMjROb3YyMDE5XzE2NTkzMTEYMBYGA1UECwwPMDBEMVUwMDAwMDB5NmJPMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIgFgG/mHStAMO2/luc/qH3RBQwo/lvFyi+vdmd+eAhuVdMlN6mlfICPS86osijEunLp3X173E2X1JZr76rec/ElNSO+NEmQEkIt6PT8JVCiyjOPavU79e94rB0X4VY/PYjcCaruQ8FoxbqSpakTtoSkV/ON+Kdh+OCiuk4sliKYZF3fwjQ63P41DD0jxJdvIaG2WkKKEcETMMRi3CvhI5sWTP5jBerjdME/miGRXHrNN8WfVSPWQCl6JyaUn091YEehWB0b9LBjBIN4TY6j23sX4W2Zhm77xAolBw9hO4A3PxcPpKFsIQXTrxfP/6BYusl1Nnuc3op3kh1JsKngYn0CAwEAAaOCAQAwgf0wHQYDVR0OBBYEFMqvOnlUaSnewWR+nk/oCHw+RyT7MA8GA1UdEwEB/wQFMAMBAf8wgcoGA1UdIwSBwjCBv4AUyq86eVRpKd7BZH6eT+gIfD5HJPuhgZakgZMwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzI0Tm92MjAxOV8xNjU5MzExGDAWBgNVBAsMDzAwRDFVMDAwMDAweTZiTzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgFunlqowwAAAAAtM1rhMA0GCSqGSIb3DQEBCwUAA4IBAQCEHQSdH7+KSEpe5dQCpqTcmtGgidZxe+0E2j9vVmE9PQbuWYCbTgRZkegeGBxxcGTV3UXKdha5Zh9tSIf93LgqaYdDJgKAUDyt7wsXkPUN1P4Xef85XpHhF/0HjgIGJMnZs8FQSYhhlPs60W1ntHaJu/4HGlPlFLD3XKuzbxr44MSMm8sSW6e467b4myvHC2XiZ1xq9HnVPbcMfxtzQRa85T9CuxfRRwaTQZ8zwnfSvF+fQnKMozW9SLv2GEZ2D3C7y9N1vm0TB3uF4yNhm1E8qxF8U4oNw8zgKxPsMJSS7Qf3TVOJe3suXBIwT+4TKA81nWbVPU1N11j77XYyhME1</validationCert>
+</SamlSsoConfig>

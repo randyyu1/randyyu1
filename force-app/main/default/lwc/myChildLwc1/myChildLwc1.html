@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-border_top slds-border_bottom slds-border_left slds-border_right">
+    <lightning-card title="Child Component" icon-name="custom:custom12" >
+        <div class="slds-m-around_medium">
+        <p>@api variable: <lightning-formatted-text value={apiVar}></lightning-formatted-text></p>
+        <p>@api method: <lightning-formatted-text value={apiMethod}></lightning-formatted-text></p>
+        <lightning-button label="Fire myevent to Parent" variant="brand" onclick={handleClick}></lightning-button></p>
+        </div>
+    </lightning-card>
+    </div>
+</template>

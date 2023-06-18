@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="data-table pagination myLwc28" icon-name="custom:custom7">
+    <div class="slds-m-around_medium">
+        <lightning-datatable data={currentPageData}
+                            columns={columns}
+                            key-field="Id"
+                            hide-checkbox-column="true">
+        </lightning-datatable>
+
+        <div class="slds-align_absolute-center slds-m-vertical_large">
+            <ul class="slds-button-group-row">
+                <template if:true={hasPrev}>
+                    <li class="slds-button-group-item" >
+                        <button class="slds-button slds-button_neutral" onclick={onPrev}>Prev</button>
+                    </li>
+                </template>
+                <template for:each={pagesList} for:item= "pageNumber">
+                    <li class="slds-button-group-item" key={pageNumber}>
+                        <button data-id={pageNumber} class="slds-button slds-button_neutral" onclick={onPageClick}>{pageNumber}</button>
+                    </li>
+                </template>
+                <template if:true={hasNext}>
+                    <li class="slds-button-group-item">
+                        <button class="slds-button slds-button_neutral" onclick={onNext}>Next</button>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>
+    </lightning-card>
+    </template>

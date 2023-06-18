@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>My Lead AutoResponse Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>GC1000</value>
+            </criteriaItems>
+            <senderEmail>randy.yu@7summitsinc.com</senderEmail>
+            <senderName>Sales Department</senderName>
+            <template>unfiled$public/My_Lead_AutoResponse_Email_Template</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

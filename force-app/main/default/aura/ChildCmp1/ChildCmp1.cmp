@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:attribute name="myattr" type="String" default="default" />
+	<h1>Inside ChildCmp1 component. myattr is {!v.myattr}</h1>
+</aura:component>

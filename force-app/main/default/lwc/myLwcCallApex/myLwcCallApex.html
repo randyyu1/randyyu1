@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="My Card Title" icon-name="standard:account">
+        <lightning-button label="Call Apex" onclick={handleClick}></lightning-button>
+        <template if:true={message}>
+            <p>{message}</p>
+        </template>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+    </lightning-card>
+</template>

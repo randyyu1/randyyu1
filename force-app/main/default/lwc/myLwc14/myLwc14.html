@@ -1,0 +1,12 @@
+<template>
+<lightning-card title="Call Apex imperatively" icon-name="custom:custom8">
+<div class="slds-m-around_medium">
+    <template if:true={accts} for:each={accts} for:item="oneAcct">
+        <div key={oneAcct.Id} class="slds-box slds-box_x-small slds-theme--shade slds-theme--alert-texture slds-m-bottom_small">
+            <p>Name: <lightning-formatted-text value={oneAcct.Name}></lightning-formatted-text></p>
+            <p>Phone: <lightning-formatted-text value={oneAcct.Phone}></lightning-formatted-text></p>
+        </div>
+    </template>
+</div>
+</lightning-card>
+</template>

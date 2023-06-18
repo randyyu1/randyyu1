@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>randyyu1@yahoo.com</contactEmail>
+    <contactPhone>7708272599</contactPhone>
+    <label>JavaClient</label>
+    <oauthConfig>
+        <callbackUrl>https://www.cnn.com</callbackUrl>
+        <consumerKey>3MVG9KsVczVNcM8xLlFXH1WTJPJN1OCVYppeTwBCsngk7EBVg6nn5YjDl32tUinAhFbq3TjgtM7GJn5d7EC8L</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
